@@ -1,0 +1,51 @@
+### GET / route
+
+GET http://localhost:3000/
+Content-Type: application/json
+
+### GET users
+
+GET http://localhost:3000/users
+Content-Type: application/json
+
+### GET one user
+
+GET http://localhost:3000/users/1
+Content-Type: application/json
+
+### POST User
+
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "id": 0,
+    "name": "Termesz3",
+    "email": "termeszvok232@gmail.com",
+    "password": "termike1232434."
+}
+
+### DELETE user
+
+DELETE http://localhost:3000/users/4
+Content-Type: application/json
+
+### PATCH user by id
+PATCH http://localhost:3000/users/1
+Content-Type: application/json
+
+{
+    "name": "Termesz2",
+    "age": 25,
+    "gender": "male"
+}
+
+### POST login
+
+POST http://localhost:3000/users/login
+Content-Type: application/json
+
+{
+    "email": "a@aa.com",
+    "password": "ASDasd123"
+}

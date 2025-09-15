@@ -1,51 +1,73 @@
 ### GET / route
-
+ 
 GET http://localhost:3000/
 Content-Type: application/json
-
+ 
 ### GET users
-
+ 
 GET http://localhost:3000/users
 Content-Type: application/json
-
+ 
 ### GET one user
-
+ 
 GET http://localhost:3000/users/1
 Content-Type: application/json
-
+ 
 ### POST User
-
+ 
 POST http://localhost:3000/users
 Content-Type: application/json
-
+ 
 {
     "id": 0,
     "name": "Termesz3",
     "email": "termeszvok232@gmail.com",
     "password": "termike1232434."
 }
-
+ 
 ### DELETE user
-
+ 
 DELETE http://localhost:3000/users/4
 Content-Type: application/json
-
+ 
 ### PATCH user by id
 PATCH http://localhost:3000/users/1
 Content-Type: application/json
-
+ 
 {
     "name": "Termesz2",
     "age": 25,
     "gender": "male"
 }
-
+ 
 ### POST login
-
+ 
 POST http://localhost:3000/users/login
 Content-Type: application/json
-
+ 
 {
     "email": "a@aa.com",
     "password": "ASDasd123"
 }
+### POST steps
+POST http://localhost:3000/steps
+Content-Type: application/json
+ 
+{
+    "id": 0,
+    "uid": 4,
+    "steps": 2000,
+    "date": "2001-09-11"
+}
+### GET all steps
+GET http://localhost:3000/steps
+Content-Type: application/json
+ 
+### GET steps by id
+GET http://localhost:3000/steps/user/2
+Content-Type: application/json
+ 
+### DELETE steps by userid
+DELETE http://localhost:3000/steps/2
+Content-Type: application/json
+ 
